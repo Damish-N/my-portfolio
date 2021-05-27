@@ -84,7 +84,7 @@ let swiper = new Swiper(".portfolio__container", {
 
 const sections = document.querySelectorAll("section[id]");
 
-function scrollActive(params) {
+function scrollActive() {
   const scrollY = window.pageYOffset;
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
@@ -104,3 +104,24 @@ function scrollActive(params) {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+function scrollHeader() {
+  const nav = document.getElementById("header");
+  if (this.scrollY >= 80) {
+    console.log("dsds");
+    nav.classList.add("scroll-header");
+  } else {
+    nav.classList.remove("scroll-header");
+  }
+}
+
+function scrollUp() {
+  const scroll = document.getElementById("scroll-up");
+  if (this.scrollY >= 560) {
+    scroll.classList.add("show-scroll");
+  } else {
+    scroll.classList.remove("show-scroll");
+  }
+}
+
+window.addEventListener("scroll", scrollUp);
