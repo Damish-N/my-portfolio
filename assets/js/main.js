@@ -23,8 +23,6 @@ navLink.forEach((element) => {
   element.addEventListener("click", linkClick);
 });
 
-
-
 const skillsContent = document.getElementsByClassName("skills__content");
 const skillSHeader = document.querySelectorAll(".skills__header");
 
@@ -41,4 +39,28 @@ function toggleSkills() {
 
 skillSHeader.forEach((element) => {
   element.addEventListener("click", toggleSkills);
+});
+
+const modalViews = document.querySelectorAll(".services__modal");
+const modalBtns = document.querySelectorAll(".services__button");
+const modalCloses = document.querySelectorAll(".services__modal-close");
+
+let modal = function (modalClick) {
+  console.log("dssd|");
+  modalViews[modalClick].classList.add("active-modal");
+};
+
+modalBtns.forEach((element, i) => {
+  element.addEventListener("click", () => {
+    modal(i);
+  });
+});
+
+modalCloses.forEach((element) => {
+  element.addEventListener("click", () => {
+    modalViews.forEach((model) => {
+      console.log("ssdsd");
+      model.classList.remove("active-modal");
+    });
+  });
 });
