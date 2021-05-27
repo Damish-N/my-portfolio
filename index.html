@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- Header section -->
     <header class="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">DAMISH</a>
@@ -50,7 +51,7 @@
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="uil uil-calendar-alt"></i>Cpntact Me
+                <i class="uil uil-envelope-edit"></i>Cpntact Me
               </a>
             </li>
           </ul>
@@ -64,6 +65,77 @@
         </div>
       </nav>
     </header>
+
+    <!-- Body section -->
+
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a href="" class="home__social-icon" target="_blank">
+                <i class="uil uil-linkedin"></i>
+              </a>
+              <a href="" class="home__social-icon" target="_blank">
+                <i class="uil uil-github"></i>
+              </a>
+              <a href="" class="home__social-icon" target="_blank">
+                <i class="uil uil-facebook"></i>
+              </a>
+            </div>
+            <div class="home__img">
+              <svg
+                width="1000"
+                height="1000"
+                viewBox="0 0 1000 1000"
+                xmlns="http://www.w3.org/2000/svg"
+                class="home__blob"
+              >
+                <defs>
+                  <clipPath id="shape">
+                    <path
+                      fill="currentColor"
+                      d="M854,627Q754,754,627,810Q500,866,327,856Q154,846,134,673Q114,500,149,342Q184,184,342,146.5Q500,109,637,167.5Q774,226,864,363Q954,500,854,627Z"
+                    ></path>
+                  </clipPath>
+                </defs>
+
+                <g clip-path="url(#shape)">
+                  <path
+                    fill="#444cf7"
+                    d="M854,627Q754,754,627,810Q500,866,327,856Q154,846,134,673Q114,500,149,342Q184,184,342,146.5Q500,109,637,167.5Q774,226,864,363Q954,500,854,627Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    xlink:href="assets/img/profile.jpg"
+                  ></image>
+                </g>
+              </svg>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Hello! I'am Damish</h1>
+              <h3 class="home__subtitle">Web Devo & Mobile Devo</h3>
+              <p class="home__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laudantium accusantium distinctio assumenda quo sequi expedita
+                aperiam. Vitae ipsa eligendi ipsam ut fuga laudantium similique
+                odio mollitia laboriosam? Voluptatibus, sit dignissimos.
+              </p>
+              <a href="#contact" class="button button--flex">
+                Contact ME <i class="uil uil-envelope-edit button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- java script file -->
     <script src="./assets/js/main.js"></script>
