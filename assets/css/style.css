@@ -740,3 +740,63 @@ img {
   width: 232px;
   justify-self: center;
 }
+
+/* .contact-me{} */
+
+.contact__container {
+  row-gap: 3rem;
+}
+
+.contact__information {
+  display: flex;
+  margin-bottom: var(--mb-2-5);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.contact__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.contact__content {
+  background-color: var(--input-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+#btn {
+  margin-left: 0.5rem;
+  font-size: var(--font-medium);
+  color: #fff;
+}
+
+.contact__label {
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+}
+.contact__input {
+  width: 100%;
+  background-color: #fff;
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal--font-size);
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+input.contact__input,
+textarea.contact__input {
+  background-color: var(--input-color);
+  outline: none;
+  border: none;
+}
