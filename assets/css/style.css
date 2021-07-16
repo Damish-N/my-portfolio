@@ -485,7 +485,7 @@ img {
   width: 50%;
 }
 .skills__react {
-  width: 50%;
+  width: 70%;
 }
 
 .skills__php {
@@ -508,10 +508,10 @@ img {
   width: 70%;
 }
 .skills__flutter {
-  width: 10%;
+  width: 60%;
 }
 .skills__react-native {
-  width: 10%;
+  width: 50%;
 }
 
 .skills__close .skills__list {
