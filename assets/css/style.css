@@ -475,6 +475,22 @@ img {
   background-color: var(--first-color);
 }
 
+.skills__c {
+  width: 80%;
+}
+.skills__Java {
+  width: 60%;
+}
+.skills__Dart {
+  width: 50%;
+}
+.skills__R {
+  width: 70%;
+}
+.skills__Scala {
+  width: 70%;
+}
+
 .skills__html {
   width: 80%;
 }
